@@ -5,7 +5,7 @@ from selenium import webdriver
 browser = webdriver.Chrome("../ChromeDriver.exe")
 
 # Chrome WebDriver의 capabilities 속성 사용
-capabilities = browser.capabilities
+# capabilities = browser.capabilities
 
 # - 주소에 https://www.w3schools.com/ 입력
 browser.get("https://www.w3schools.com/")                   # 크롬 브라우저에 주소 넣는거와 같음.
