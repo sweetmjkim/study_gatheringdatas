@@ -24,9 +24,9 @@ print(html)
 from selenium.webdriver.common.by import By
 
 # # ## 하나에 element 가져오기
-# selector_value = "#\37 323106802 > a > dl > dd > div.name"
-# element_path = browser.find_element(by=By.CSS_SELECTOR, value=selector_value)
-# pass
+selector_value = "#\\37 323106802 > a > dl > dd > div.name"
+element_path = browser.find_element(by=By.CSS_SELECTOR, value=selector_value)
+pass
 
 ## 여러개 elements 정보 가져오기                                                        # 상품명을 찾아줘
 selector_value = "div.name"
