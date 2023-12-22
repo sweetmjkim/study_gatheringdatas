@@ -11,8 +11,8 @@ browser = webdriver.Chrome(service=ChromeService(webdriver_manager_directory))
 # Chrome WebDriver의 capabilities 속성 사용
 capabilities = browser.capabilities
 
-# - 주소 입력(https://www.w3schools.com/) 후 Enter
-browser.get("https://www.w3schools.com/")                          # 크롬 브라우저에 주소 넣는거와 같음.
+# - 주소 입력(https://github.com/login) 후 Enter
+browser.get("https://github.com/login")                          # 크롬 브라우저에 주소 넣는거와 같음.
 
 # - 가능 여부에 대한 OK 받음
 pass
@@ -22,8 +22,17 @@ html = browser.page_source
 
 # - 정보 획득
 from selenium.webdriver.common.by import By
+
+element_login_field = browser.find_element(by=By.CSS_SELECTOR, value="#login_field")
+element_login_field.send_keys("sweet.mjkim@gmail.com")
+
+element_password_field = browser.find_element(by=By.CSS_SELECTOR, value="#password")
+element_password_field.send_keys("")
+
+element_login_button = browser.find_element(by=By.CSS_SELECTOR, value="div > input.btn.btn-primary.btn-block.js-sign-in-button")
+element_login_button.click()
 pass
-# browser.save_screenshot('./formats.png')                            # 진행된 결과 스크린샷을 저장해준다.
+# browser.save_screenshot('./formats.png')
 
 # 브라우저 종료
 browser.quit()
