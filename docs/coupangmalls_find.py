@@ -23,7 +23,7 @@ print(html)
 # - 정보 획득
 from selenium.webdriver.common.by import By
 
-# ## 하나에 element 가져오기
+# # ## 하나에 element 가져오기
 # selector_value = "#\37 323106802 > a > dl > dd > div.name"
 # element_path = browser.find_element(by=By.CSS_SELECTOR, value=selector_value)
 # pass
