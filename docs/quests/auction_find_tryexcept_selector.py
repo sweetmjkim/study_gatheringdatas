@@ -1,18 +1,6 @@
 # 상품제목, 판매원가, 변경가격, 배송방법(list)
 # 고유 : github, 사용한 각각 element
 
-# 전체: div > div.info
-# itembest_T > ul.uxb-img.first > li.first > div
-# 제목: em > a
-# itembest_T > ul.uxb-img.first > li.first > div > div.info > em > a
-# 원가: li.c_price
-#itembest_T > ul.uxb-img.first > li.first > div > div.info > ul > li.c_price
-# 가격: li.d_price
-#itembest_T > ul.uxb-img.first > li.first > div > div.info > ul > li.d_price
-# 배송: div.icon
-#itembest_T > ul.uxb-img.first > li.first > div > div.info > div.icon
-
-
 # * 웹 크롤링 동작
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service as ChromeService
