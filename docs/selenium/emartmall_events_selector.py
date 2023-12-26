@@ -11,7 +11,7 @@ from selenium.webdriver.chrome.service import Service as ChromeService
 from webdriver_manager.chrome import ChromeDriverManager
 import time
 
-from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.chrome.options import Options               # 페이지 블럭킹 된거 풀기
 
 # Chrome 브라우저 옵션 생성
 chrome_options = Options()
