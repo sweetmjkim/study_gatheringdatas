@@ -19,7 +19,7 @@ def Connect_Mongo():
     collection.delete_many({})
     return collection
 
-
+# 크롬 드라이브를 설치해서 크롬 드라이브의 위치를 쉽게 찾아주는 역할
 webdriver_manager_directory = ChromeDriverManager().install()
 
 # ChromeDriver 실행(Chrome 열기)
