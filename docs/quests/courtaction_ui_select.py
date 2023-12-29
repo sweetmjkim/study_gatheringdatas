@@ -59,7 +59,7 @@ def insert_db(collection) :
                 element_law_location = "None"
                 
             try :       # 사건번호
-                element_event_number = element_courtauction.options[element_index].find_element(by=By.CSS_SELECTOR, value="form:nth-child(1) > table > tbody > tr:nth-child({}) > td:nth-child(2)".format())
+                element_event_number = element_courtauction.options[element_index].find_element(by=By.CSS_SELECTOR, value="form:nth-child(1) > table > tbody > tr:nth-child({}) > td:nth-child(2)".format(i))
                 element_event_number = element_event_number.text
             except :
                 element_event_number = "None"

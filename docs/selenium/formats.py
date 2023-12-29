@@ -26,6 +26,7 @@ html = browser.page_source
 
 # - 정보 획득
 from selenium.webdriver.common.by import By
+
 pass
 # browser.save_screenshot('./formats.png')                            # 진행된 결과 스크린샷을 저장해준다.
 
