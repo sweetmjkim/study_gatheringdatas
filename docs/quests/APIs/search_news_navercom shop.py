@@ -3,9 +3,9 @@
 import requests         #postman app 역할
 
 # request API 요청
-url = 'https://openapi.naver.com/v1/search/shop'
-params = {'query' : '블랙박스'}
-headers = {'X-Naver-Client-Id' : 'JpVPHqeIjR0_FhfaGShS'
+url = 'https://openapi.naver.com/v1/search/shop'                # uri 주소
+params = {'query' : '블랙박스'}                                  # 검색어 : 블랙박스
+headers = {'X-Naver-Client-Id' : 'JpVPHqeIjR0_FhfaGShS'         # api인증키
            ,'X-Naver-Client-Secret' : 'rWFwXYlaa5'}
 
 response = requests.get(url, params=params, headers=headers)
